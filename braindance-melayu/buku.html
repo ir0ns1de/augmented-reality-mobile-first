@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buku Digital - AR Fitrah</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="min-h-screen page-shell">
+    <section class="hero compact">
+      <div class="topbar">
+        <a class="back-button" href="menu.html" aria-label="Kembali"><i class="fa-solid fa-arrow-left"></i></a>
+        <button class="icon-button" onclick="openCamera()" aria-label="Buka kamera AR"><i class="fa-solid fa-camera"></i></button>
+      </div>
+      <div class="hero-content">
+        <p class="eyebrow">Bahan bacaan</p>
+        <h1>Buku digital</h1>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <article class="info-card">
+        <h2>Braindance Tari Melayu</h2>
+        <p>Halaman ini berisi ringkasan materi tentang brain dance berbasis tari melayu. Kamu bisa membaca modul dan melakukan pemindaian untuk melihat contoh gerakan video.</p>
+        <!-- <div class="badge-row">
+          <span class="badge">Budaya</span>
+          <span class="badge">Gerak</span>
+          <span class="badge">Musik</span>
+        </div> -->
+      </article>
+      <article class="info-card">
+        <h2>Materi utama</h2>
+        <ul>
+          <li>8 Gerakan Brain Dance berbasis Tari Minang</li>
+          <li>Contoh Implementasi Gerakan Tari Minang secara Penuh</li>
+          <li>Belajar dilengkapi dengan Augmented Reality</li>
+        </ul>
+      </article>
+      <button class="primary-button"><i class="fa-solid fa-book"></i> Baca Modul Petunjuknya</button>      
+      <button class="primary-button"><i class="fa-solid fa-video"></i> Simak Videonya</button>      
+    </section>
+  </main>
+
+  <footer class="floating-footer" aria-label="Navigasi cepat">
+    <a class="footer-item" href="petunjuk.html" aria-label="Petunjuk">
+      <i class="fa-solid fa-map-location-dot"></i>
+      <span>Petunjuk</span>
+    </a>
+    <a class="footer-item" href="menu.html" aria-label="Beranda">
+      <i class="fa-solid fa-house"></i>
+      <span>Home</span>
+    </a>
+    <a class="footer-item footer-camera" href="https://s.id/tarianmelayu" target="_blank" rel="noopener noreferrer" aria-label="Kamera AR">
+      <i class="fa-solid fa-camera"></i>
+      <span>Kamera</span>
+    </a>
+    <a class="footer-item" href="pergerakan.html" aria-label="Pergerakan">
+      <i class="fa-solid fa-person-running"></i>
+      <span>Gerak</span>
+    </a>
+    <a class="footer-item" href="pengembang.html" aria-label="Tentang pengembang">
+      <i class="fa-solid fa-user-graduate"></i>
+      <span>Profil</span>
+    </a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

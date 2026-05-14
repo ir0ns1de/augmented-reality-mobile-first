@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kumpulan AR - AR Fitrah</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="min-h-screen page-shell">
+    <section class="hero compact">
+      <div class="topbar">
+        <a class="back-button" href="menu.html" aria-label="Kembali"><i class="fa-solid fa-arrow-left"></i></a>
+        <button class="icon-button" onclick="openCamera()" aria-label="Buka kamera AR"><i class="fa-solid fa-camera"></i></button>
+      </div>
+      <div class="hero-content">
+        <p class="eyebrow">Daftar marker</p>
+        <h1>Marker AR</h1>
+        <small>Buka gambar ini pada perangkat lain untuk melihat contoh gerakan berbasis AR</small>
+      </div>
+    </section>
+
+    <section class="content-section ar-section">
+      <div class="ar-slider" id="ar-slider" aria-label="Slide gambar kumpulan AR">
+        <article class="ar-slide">
+          <img src="marker/gerakan1.png" alt="Marker AR gerak Takzim">
+          <span>Gerak 1</span>
+          <h2>Takzim</h2>
+        </article>
+        <article class="ar-slide">
+          <img src="marker/gerakan2.png" alt="Marker AR gerak Siku Keluang Samping">
+          <span>Gerak 2</span>
+          <h2>Siku Keluang Samping</h2>
+        </article>
+        <article class="ar-slide">
+          <img src="marker/gerakan3.png" alt="Marker AR gerak Bentang Alam Samping">
+          <span>Gerak 3</span>
+          <h2>Bentang Alam Samping</h2>
+        </article>
+        <article class="ar-slide">
+          <img src="marker/gerakan4.png" alt="Marker AR gerak Bentang Alam Atas Bawah">
+          <span>Gerak 4</span>
+          <h2>Bentang Alam Atas Bawah</h2>
+        </article>
+        <article class="ar-slide">
+          <img src="marker/gerakan5.png" alt="Marker AR gerak Lenggang Atas dan Tandak Kaki">
+          <span>Gerak 5</span>
+          <h2>Lenggang Atas dan Tandak Kaki</h2>
+        </article>
+        <article class="ar-slide">
+          <img src="marker/gerakan6.png" alt="Marker AR gerak Buka Bunga Samping">
+          <span>Gerak 6</span>
+          <h2>Buka Bunga Samping</h2>
+        </article>
+        <article class="ar-slide">
+          <img src="marker/gerakan7.png" alt="Marker AR gerak Meniti Batang">
+          <span>Gerak 7</span>
+          <h2>Meniti Batang</h2>
+        </article>
+        <article class="ar-slide">
+          <img src="marker/gerakan8.png" alt="Marker AR gerak Putar Alam">
+          <span>Gerak 8</span>
+          <h2>Putar Alam</h2>
+        </article>
+        <article class="ar-slide demo-slide">
+          <img src="marker/gerakanfull.png" alt="Marker AR demo gerakan full">
+          <span>Demo</span>
+          <h2>Demo Gerakan Full</h2>
+        </article>
+      </div>
+
+      <div class="slider-controls" aria-label="Kontrol slide">
+        <button type="button" onclick="slideAr(-1)" aria-label="Slide sebelumnya">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button type="button" onclick="slideAr(1)" aria-label="Slide berikutnya">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <article class="scan-note">
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+        <p>Gambar pada slide ini dapat memunculkan tarian ketika dipindai atau di-scan melalui kamera AR.</p>
+      </article>
+
+      <button class="primary-button" onclick="openCamera()"><i class="fa-solid fa-camera"></i> Pindai Gambar AR</button>
+    </section>
+  </main>
+
+  <footer class="floating-footer" aria-label="Navigasi cepat">
+    <a class="footer-item" href="petunjuk.html" aria-label="Petunjuk">
+      <i class="fa-solid fa-map-location-dot"></i>
+      <span>Petunjuk</span>
+    </a>
+    <a class="footer-item" href="menu.html" aria-label="Beranda">
+      <i class="fa-solid fa-house"></i>
+      <span>Home</span>
+    </a>
+    <a class="footer-item footer-camera" href="https://s.id/tarianmelayu" target="_blank" rel="noopener noreferrer" aria-label="Kamera AR">
+      <i class="fa-solid fa-camera"></i>
+      <span>Kamera</span>
+    </a>
+    <a class="footer-item" href="pergerakan.html" aria-label="Pergerakan">
+      <i class="fa-solid fa-person-running"></i>
+      <span>Gerak</span>
+    </a>
+    <a class="footer-item" href="pengembang.html" aria-label="Tentang pengembang">
+      <i class="fa-solid fa-user-graduate"></i>
+      <span>Profil</span>
+    </a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
