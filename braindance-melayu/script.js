@@ -1,5 +1,5 @@
 function openCamera() {
-  window.open("https://s.id/tarianmelayu", "_blank", "noopener,noreferrer");
+  window.open("https://webar-simulator.lovable.app/ar/XA28VP3R", "_blank", "noopener,noreferrer");
 }
 
 window.addEventListener("load", () => {
